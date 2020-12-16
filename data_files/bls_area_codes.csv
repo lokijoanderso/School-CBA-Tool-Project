@@ -1,0 +1,51 @@
+area_code,area_text,State_Abbrv,display_level,selectable,sort_sequence
+0100000,Alabama,AL,0,T,2
+0200000,Alaska,AK,0,T,19
+0400000,Arizona,AZ,0,T,25
+0500000,Arkansas,AR,0,T,35
+0600000,California,CA,0,T,46
+0800000,Colorado,CO,0,T,87
+0900000,Connecticut,CT,0,T,99
+1000000,Delaware,DE,0,T,108
+1200000,Florida,FL,0,T,115
+1300000,Georgia,GA,0,T,146
+1500000,Hawaii,HI,0,T,165
+1600000,Idaho,ID,0,T,170
+1700000,Illinois,IL,0,T,182
+1800000,Indiana,IN,0,T,201
+1900000,Iowa,IA,0,T,220
+2000000,Kansas,KS,0,T,233
+2100000,Kentucky,KY,0,T,243
+2200000,Louisiana,LA,0,T,253
+2300000,Maine,ME,0,T,268
+2400000,Maryland,MD,0,T,274
+2500000,Massachusetts,MA,0,T,286
+2600000,Michigan,MI,0,T,308
+2700000,Minnesota,MN,0,T,331
+2800000,Mississippi,MS,0,T,341
+2900000,Missouri,MO,0,T,350
+3000000,Montana,MT,0,T,363
+3100000,Nebraska,NE,0,T,372
+3200000,Nevada,NV,0,T,381
+3300000,New Hampshire,NH,0,T,388
+3400000,New Jersey,NJ,0,T,398
+3500000,New Mexico,NM,0,T,406
+3600000,New York,NY,0,T,417
+3700000,North Carolina,NC,0,T,439
+3800000,North Dakota,ND,0,T,459
+3900000,Ohio,OH,0,T,469
+4000000,Oklahoma,OK,0,T,486
+4100000,Oregon,OR,0,T,495
+4200000,Pennsylvania,PA,0,T,511
+4400000,Rhode Island,RI,0,T,536
+4500000,South Carolina,SC,0,T,539
+4600000,South Dakota,SD,0,T,554
+4700000,Tennessee,TN,0,T,560
+4800000,Texas,TX,0,T,575
+4900000,Utah,UT,0,T,609
+5000000,Vermont,VT,0,T,621
+5100000,Virginia,VA,0,T,625
+5300000,Washington,WA,0,T,640
+5400000,West Virginia,WV,0,T,660
+5500000,Wisconsin,WI,0,T,670
+5600000,Wyoming,WY,0,T,688
