@@ -1,0 +1,103 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href={{ url_for(endpoint='static', filename="form.css") }}>
+    <title>Invest in U :: Test a Back-to-School Scenario</title>
+</head>
+<body>
+
+<div class="top_block">
+<span class = "title_text">INVEST IN U :: The Back-to-School Decision Calculator</span>
+
+</div>
+
+<!-- form -->
+    <div class="search_block">
+
+    {% block content %}
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <div>
+                <span class="left">
+                {{ form.career.label }} <br>
+                {{ form.career }} &nbsp; {{ form.choose()}}
+                {% for error in form.career.errors %}
+                 <br>
+                <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+                </span>
+
+                <span class="next">
+                {{ form.pathway.label }}<br>
+                {{ form.pathway }}
+                </span>
+
+            </div>
+            <div>
+                <span class="left">
+                {{ form.state.label }}<br>
+               {{ form.state }}
+               {% for error in form.state.errors %}
+                 <br>
+                <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+               </span>
+            <span class="next">
+            {{ form.education.label }}<br>
+            {{ form.education }}
+            {% for error in form.education.errors %}
+            <br>
+            <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+            </span>
+            <span class="next">
+            {{ form.experience.label }}<br>
+            {{ form.experience }}
+            {% for error in form.experience.errors %}
+            <br>
+            <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+            </span>
+
+            <span class="buttons">
+                <br>
+                {{ form.submit() }} &nbsp;
+               {{ form.clear() }}
+               </span>
+            </div>
+
+    {% endblock %} 
+
+    </div>
+<!-- end form /-->
+
+<!-- display data -->
+    {% if form.submit.data %}
+    
+    <div class="response">
+        <span>
+        <p> {{ form.return_data }}
+        </p>
+        </span>
+    </div>
+    {% endif %}
+<!-- end display data -->
+<!-- credits and data run buttons -->
+<div>
+    <div class="credits">
+        <span> Developed by KYQ for UChi course CAPP30122 / INVEST in U is powered by <a href="https://www.onetonline.org">O*NET</a>, the 
+            <a href="https://www.bls.gov"> US Bureau of Labor Statistics</a>
+             and <a href="https://www.usnews.com/best-colleges/rankings">
+             College Rankings from US News</a>.</span>
+    </div>
+    <div class="credits">
+        <span>
+        for dev data testing only ::
+        {{ form.test_bls() }} &nbsp; 
+        {{ form.test_onet() }} &nbsp; 
+        {{ form.test_educ() }}</span>
+    </div>
+</div>
+<!-- end credits -->
+
+</body>
+</html>
