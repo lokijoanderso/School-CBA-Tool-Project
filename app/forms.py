@@ -2,7 +2,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, RadioField, SelectField, BooleanField, SubmitField
 from wtforms.validators import DataRequired, NoneOf
 from app import fields
-import temp
+# import temp
 
 defval = ("-1", "Select a Choice" )
 edufield = [defval] + fields.educ_levels
