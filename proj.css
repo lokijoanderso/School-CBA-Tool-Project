@@ -1,0 +1,170 @@
+/*
+  The default css for my site.
+    Colors include:
+
+        dark blue: #2B4E8F;
+        mid teal: #4C8D9F;
+        lighter teal: #B5D3D1;
+        lightest teal: #DEF1EF
+  */
+
+  :root {
+    --bg-color: #B5D3D1;
+    --light-bg-color: #DEF1EF;
+    --title-color: #4C8D9F;
+    --dark-title-color: #2B4E8F;
+    --text-color: black;
+    --light-text-color: #333333;
+  }
+
+  body, html {
+    font-family: sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dark-title-color);
+    text-decoration: underline;
+}
+
+div {
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div#header, div#footer {
+    background-color: var(--bg-color);
+    min-height: 30px;
+}
+
+div#authors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+div#content {
+    width: 75%;
+    min-width: 500px;
+    margin-bottom: 100px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.author {
+    padding: 0px 20px;
+    max-width: 20%;
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #4C8D9F;
+}
+
+h1 {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#header h1 {
+    font-size: 30px;
+    color: var(--text-color);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#header h2 {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+    color: var(--light-text-color);
+}
+
+#header h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--light-text-color);
+}
+
+p {
+    text-align: left;
+    padding: 0px 30px;
+}
+
+ul {
+    padding-left: 60px;
+}
+
+li {
+    padding: 5px 10px;
+}
+
+div.image {
+    background-color: var(--light-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.image div{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+div.image div img{
+    background-color: white;
+    max-width: 500px;
+}
+
+div.image div.caption{
+    width: 40%;
+    justify-content: left;
+}
+
+div.links {
+    background-color: var(--light-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div.links div {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    max-height: 40px;
+    padding: 10px 0px;
+}
+
+div.links p {
+    padding-right: 0px;
+    margin-top: 8px;
+    margin-right: 5px;
+    
+}
+
+div.links img{
+    width: 30px;
+    height: auto;
+    padding-left: 0px;
+    margin-left: 0px;
+}

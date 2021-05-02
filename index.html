@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Invest In U: Back-To-School Cost Tool | github portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./proj.css" />
+  </head>
+  <body>
+      <!-- This is where you do the work -->
+      <div id="page">
+
+        <div id="header">
+            <div id="title">
+                <h1>Invest In U</h1>
+                <h2>Back-To-School Cost Benefit Tool</h2>
+            </div>
+            <div id="authors">
+                <div class="author">
+                    <h3>
+                        by &nbsp; 
+                        <a href="https://lokijoanderso.github.io" target="_blank">
+                            kelsey anderson
+                        </a>
+                    </h3>
+                </div>
+                <div class="author">
+                    <h3><a href="https://www.linkedin.com/in/yimeng-qiu-7585b0208/" target="_blank">
+                        yimeng qui 
+                    </a></h3>
+                </div>
+                <div class="author">
+                    <h3><a href="https://www.linkedin.com/in/yawei-li-b56a4b75/" target="_blank">
+                        yawei li
+                    </a></h3>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="content">
+            <div class="section">
+                <h1>Purpose</h1>
+                <p>A group project for an introductory computer science
+                    course (CAPP 30122) aimed at creating a tool to help 
+                    prospective students find cusotmized cost-benefit information 
+                    about enrollment in higher education protrams. The tool  
+                    analyzes and compares the cost of higher education programs 
+                    to predicted wages in related job titles.</p>
+            </div>
+            <div class="section">
+                <h1>Methods</h1>
+                <p>The code is written in Python and uses Beautiful Soup to extract job 
+                    requirements and wages from 
+                    <a href="https://www.onetonline.org" target="_blank">O*NET</a> 
+                    and college costs from US World News college rankings. </p>
+                    <p>
+                    Costs and outcomes are run through a sklearn linear regressive model 
+                    to allow granular education/location/experience predictions. </p>
+                    <div class="image">
+                        <div><img src="./proj_images/investU.png"/></div>
+                        <div class="caption">
+                            <p>The Invest in U web interface.</p>
+                        </div>
+                    </div>
+                    <p>
+                    The web interface is supported by a flask framework.</p>
+            </div>
+            <div class="section">
+                <h1>Results</h1>
+                <p>Given user background input (intended field, highest education, work
+                    experience, state to work in), we sucessfully return:
+                    <ul>
+                        <li>Expected annual wage
+                            with the current background, 
+                            calculated by our model.</li>
+                        <li>Expected hourly wage and annual wage with educational 
+                            level increased to the Master’s level.</li>
+                    </ul> 
+                </p>
+                    <p>Due to project time constraints we where unable to:
+                    <ul>
+                        <li>Better optimize the prediction model.</li>
+                        <li>Expand educational predictions for multiple degree levels.</li> 
+                        <li>Provide specific college recommendations due to failure to debug that module.</li>
+                    </ul></p>
+            </div>
+
+            <div class="section">
+                <h1>Project Links</h1>
+                <div class="links">
+                    <div>
+        
+                        <p><a ref="https://github.com/lokijoanderso/School-CBA-Tool-Project">
+                            github repository</a></p>
+                        <a href="https://github.com/lokijoanderso/School-CBA-Tool-Project">
+                            <img src="./images/github.svg" /></a>
+                    
+                    </div>
+                    <div>
+                    
+                        <p><a href="./proj_docs/kjanderson-qym-yaweili-KYQ.pdf">
+                            report write-up</a></p>
+                        <a href="./proj_docs/kjanderson-qym-yaweili-KYQ.pdf">
+                            <img src="./images/pdf.svg" /></a>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+      </div>
+      <div id="footer"></div>
+
+</body>
+</html>
